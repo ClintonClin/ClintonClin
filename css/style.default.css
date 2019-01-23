@@ -264,6 +264,10 @@ p.social a.email {
   background-color: #666;
 }
 
+p.social a.github {
+  background-color: #333;
+}
+
 /*
 *
 =====================
