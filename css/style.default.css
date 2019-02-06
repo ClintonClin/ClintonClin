@@ -156,6 +156,7 @@ INTRO SECTION
 .intro h1, .intro h2, .intro h3, .intro p {
   color: #fff;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+   animation: yourAnimation 3s forwards 0s linear;
 }
 
 .intro p {
@@ -1995,5 +1996,27 @@ code {
   .card-deck .card {
     margin-right: 15px;
     margin-left: 15px;
+  }
+}
+
+@keyframes yourAnimation {
+  0% {
+    transform: rotate(xx) scale(0) translateX(-30%) skewX(-10deg);
+    opacity: 0;
+  }
+
+  30% {
+    transform: scale(0.5) translateX(0);
+    opacity: 0.5;
+  }
+
+  80% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+
+  100% {
+    transform: rotate(xx);
+    opacity: 1;
   }
 }
